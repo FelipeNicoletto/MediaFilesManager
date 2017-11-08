@@ -7,7 +7,7 @@
     <authors>Felipe Nicoletto</authors>
     <owners>buildguest</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description></description>
+    <description>MediaFilesManager</description>
     <copyright>Copyright © 2017</copyright>
     <dependencies>
       <group targetFramework="net">
@@ -47,7 +47,7 @@
     <file src="src\MediaFilesManager\bin\Release\netstandard1.0\MediaFilesManager.*" target="lib\netstandard1.0" />
 
     <!--Xamarin.Android-->
-    <file src="src\MediaFilesManager.Android\bin\Release\MediaFilesManager.*" target="lib\MonoAndroid10" />
+    <file src="src\MediaFilesManager.Android\bin\Release\MediaFilesManager.*" target="lib\MonoAndroid80" />
 
     <!--Xamarin.iOS-->
     <file src="src\MediaFilesManager.iOS\bin\Release\MediaFilesManager.*" target="lib\Xamarin.iOS10" />
