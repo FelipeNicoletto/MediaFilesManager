@@ -76,16 +76,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MediaFilesManager.Abstractions\MediaFilesManager.Abstractions.csproj">
-      <Project>{b5bac99b-bf9b-4752-b590-7bfe4168df10}</Project>
-      <Name>MediaFilesManager.Abstractions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\MediaFilesManager\MediaFilesManager.csproj">
-      <Project>{8087abc8-599e-46cc-aedd-e66a4ef40b26}</Project>
-      <Name>MediaFilesManager</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
+    <Reference Include="MediaFilesManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MediaFilesManager.1.0.0\lib\netstandard1.0\MediaFilesManager.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaFilesManager.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MediaFilesManager.1.0.0\lib\netstandard1.0\MediaFilesManager.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.4.0.38779\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
