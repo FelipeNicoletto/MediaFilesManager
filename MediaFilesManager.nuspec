@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>MediaFilesManager</id>
+    <version>1.0.0</version>
+    <title>MediaFilesManager</title>
+    <authors>Felipe Nicoletto</authors>
+    <owners>buildguest</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description></description>
+    <copyright>Copyright © 2017</copyright>
+    <dependencies>
+      <group targetFramework="net">
+      </group>
+      <group targetFramework="win">
+      </group>
+      <group targetFramework="wp">
+      </group>
+      <group targetFramework="wpa">
+      </group>
+      <group targetFramework="netstandard1.0">
+        <dependency id="NETStandard.Library" version="1.6.1" />
+      </group>
+      <group targetFramework="MonoAndroid10">
+        <dependency id="Xamarin.Android.Support.Compat" version="26.1.0.1"/>
+      </group>
+      <group targetFramework="Xamarin.iOS10">
+      </group>
+      <group targetFramework="Xamarin.Mac20">
+      </group>
+      <group targetFramework="portable-net45+win+wpa81+wp80">
+      </group>
+      <group targetFramework="uap">
+      </group>
+      <group targetFramework="dotnet">
+      </group>
+      <group targetFramework="xamarintvos">
+      </group>
+      <group targetFramework="xamarinwatchos">
+      </group>
+    </dependencies>
+    <projectUrl>https://github.com/FelipeNicoletto/MediaFilesManager</projectUrl>
+    <tags>xamarin dot-net ios android cross-platform plugin media files manager</tags>
+  </metadata>
+  <files>
+    <!--Core-->
+    <file src="src\MediaFilesManager\bin\Release\netstandard1.0\MediaFilesManager.*" target="lib\netstandard1.0" />
+
+    <!--Xamarin.Android-->
+    <file src="src\MediaFilesManager.Android\bin\Release\MediaFilesManager.*" target="lib\MonoAndroid10" />
+
+    <!--Xamarin.iOS-->
+    <file src="src\MediaFilesManager.iOS\bin\Release\MediaFilesManager.*" target="lib\Xamarin.iOS10" />
+
+  </files>
+</package>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Sample"
+             x:Class="Sample.Photo">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="{Binding Image}" ></Image>
+
+                <Label FontSize="Micro" HorizontalTextAlignment="Center" Text="{Binding Details}"></Label>
+
+                <Label FontSize="Micro">Width</Label>
+                <Entry FontSize="Micro" Keyboard="Numeric" Text="{Binding Width}"></Entry>
+
+                <Label FontSize="Micro">Height</Label>
+                <Entry FontSize="Micro" Keyboard="Numeric" Text="{Binding Height}"></Entry>
+
+                <Label FontSize="Micro">Quality</Label>
+                <Entry FontSize="Micro" Keyboard="Numeric" Text="{Binding Quality}"></Entry>
+
+                <Label FontSize="Micro">Orientation</Label>
+                <Picker x:Name="imgOrientationPicker" SelectedItem="{Binding Orientation}" ></Picker>
+
+                <Label FontSize="Micro">Resize Mode</Label>
+                <Picker x:Name="imgResizeModePicker" SelectedItem="{Binding ResizeMode}" ></Picker>
+
+                <Button x:Name="button" Clicked="Button_Clicked" Text="Apply" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
