@@ -18,7 +18,7 @@
       </group>
     </dependencies>
     <projectUrl>https://github.com/FelipeNicoletto/MediaFilesManager</projectUrl>
-    <tags>xamarin dot-net ios android cross-platform plugin media files manager</tags>
+    <tags>xamarin dot-net ios android cross-platform plugin media files manager photos videos images access</tags>
   </metadata>
   <files>
     <!--Core-->
