@@ -44,13 +44,13 @@
   </metadata>
   <files>
     <!--Core-->
-    <file src="src\MediaFilesManager\bin\Release\netstandard1.0\MediaFilesManager.*" target="lib\netstandard1.0" />
+    <file src="MediaFilesManager\bin\Release\netstandard1.0\MediaFilesManager.*" target="lib\netstandard1.0" />
 
     <!--Xamarin.Android-->
-    <file src="src\MediaFilesManager.Android\bin\Release\MediaFilesManager.*" target="lib\MonoAndroid80" />
+    <file src="MediaFilesManager.Android\bin\Release\MediaFilesManager.*" target="lib\MonoAndroid80" />
 
     <!--Xamarin.iOS-->
-    <file src="src\MediaFilesManager.iOS\bin\Release\MediaFilesManager.*" target="lib\Xamarin.iOS10" />
+    <file src="MediaFilesManager.iOS\bin\Release\MediaFilesManager.*" target="lib\Xamarin.iOS10" />
 
   </files>
 </package>
