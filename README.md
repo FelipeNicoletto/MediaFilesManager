@@ -33,60 +33,37 @@ public interface IMediaAlbum
 }
 ```
 
-To get all images and videos from an album:
+Get all images and videos from an album:
 ```csharp
 IMediaFile[] files = album.GetAllMediaFiles(MediaAlbumContentType.Images | MediaAlbumContentType.Videos);
 ```
+
+Get the file's thumbnail:
 ```csharp
-public interface IMediaFile
-{
-    DateTime CreationDate { get; }
-    
-    long Size { get; }
-    
-    MediaFileType Type { get; }
+ var file = files[0] as IMediaFileWithImage;
 
-    Stream GetStream();
-}
+ ImageStream stream = file.GetImage(MediaFileGetImageOptions.CreateDefaultThumb());
+```
 
-public interface IMediaFileWithImage
-{
-    ImageStream GetImage();
-    
-    ImageStream GetImage(int width, int height);
-    
-    ImageStream GetImage(MediaFileGetImageOptions options);
-}
+Get custom image:
+```csharp
+var file = files[0] as IMediaFileWithImage;
 
-public interface IMediaFileImage : IMediaFile, IMediaFileWithImage
+var options = new MediaFileGetImageOptions
 {
-    DateTime TakenDate { get; }
-    
-    int Width { get; }
-    
-    int Height { get; }
-    
-    double Latitude { get; }
-    
-    double Longitude { get; }
-}
+    Width = 500,
+    Height = 500,
+    Quality = 90,
+    Orientation = MediaFileImageOrientation.Right,                          // Rotate image to right
+    ResizeAspect = MediaFileGetImageOptions.ImageResizeAspect.AspectFit     
+};
 
-public interface IMediaFileVideo : IMediaFile, IMediaFileWithImage
-{
-    DateTime TakenDate { get; }
-    
-    int Width { get; }
-    
-    int Height { get; }
-    
-    double Latitude { get; }
-    
-    double Longitude { get; }
-    
-    TimeSpan Duration { get; }
-    
-    string Artist { get; }
-}
+ImageStream stream = file.GetImage(options);
+```
+
+Get the full size file's stream:
+```csharp
+Stream stream = files[0].GetStream();
 ```
 
 ### Android specific in your BaseActivity or MainActivity (for Xamarin.Forms) add this code:
@@ -109,3 +86,10 @@ public override void OnRequestPermissionsResult(int requestCode, string[] permis
     MediaFileManager.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 }
 ```
+### Samples
+![](https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_1.png)
+![](https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_2.png)
+![](https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_3.png)
+![](https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_4.png)
+
+
