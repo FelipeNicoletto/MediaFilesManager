@@ -87,9 +87,14 @@ public override void OnRequestPermissionsResult(int requestCode, string[] permis
 }
 ```
 ### Samples
-![](https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_1.png)
-![](https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_2.png)
-![](https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_3.png)
-![](https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_4.png)
+- Albums
+<img src="https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_1.png" width="280" />
 
+- Photos
+<img src="https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_2.png" width="280" />
+
+<img src="https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_3.png" width="280" />
+
+- Rotated
+<img src="https://raw.githubusercontent.com/FelipeNicoletto/MediaFilesManager/master/Images/image_4.png" width="280" />
 
