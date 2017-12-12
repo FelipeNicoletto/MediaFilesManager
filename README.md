@@ -68,6 +68,9 @@ Stream stream = files[0].GetStream();
 
 ### Android specific in your BaseActivity or MainActivity (for Xamarin.Forms) add this code:
 ```csharp
+using MediaFilesManager;
+using Xamarin.Forms;
+
 protected override void OnCreate(Bundle bundle)
 {
     base.OnCreate(bundle);
