@@ -29,7 +29,7 @@ namespace MediaFilesManager.iOS
 
         protected PHAsset Asset { get; }
 
-        public string Name { get; private set; }
+        public string Name { get => Asset.ValueForKey(new NSString("filename")).ToString(); }
 
         public DateTime CreationDate { get => (DateTime)Asset.CreationDate; }
 
