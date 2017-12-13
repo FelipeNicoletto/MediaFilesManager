@@ -31,6 +31,8 @@ namespace MediaFilesManager.Droid
 
         internal string Uri { get; private set; }
 
+        public string Name { get; private set; }
+
         public DateTime CreationDate { get; private set; }
 
         public long Size { get; private set; }
@@ -55,6 +57,7 @@ namespace MediaFilesManager.Droid
         internal virtual void LoadCursor(ICursor cursor, MediaAssetQueryHelper helper)
         {
             Id = cursor.GetLong(helper.IdColumn);
+            Name = cursor.GetString(helper.NameColumn);
             Uri = cursor.GetString(helper.UriColumn);
             
             if (helper.DateAddedColumn > -1)

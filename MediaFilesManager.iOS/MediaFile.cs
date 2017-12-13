@@ -28,7 +28,9 @@ namespace MediaFilesManager.iOS
         }
 
         protected PHAsset Asset { get; }
-        
+
+        public string Name { get; private set; }
+
         public DateTime CreationDate { get => (DateTime)Asset.CreationDate; }
 
         private long? _size;

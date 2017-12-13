@@ -6,6 +6,7 @@ namespace MediaFilesManager.Abstractions
 {
     public interface IMediaFile
     {
+        string Name { get; }
         DateTime CreationDate { get; }
         long Size { get; }
         MediaFileType Type { get; }

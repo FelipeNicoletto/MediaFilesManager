@@ -138,6 +138,7 @@ namespace MediaFilesManager
     internal class MediaAssetQueryHelper
     {
         public int IdColumn { get; private set; }
+        public int NameColumn { get; private set; }
         public int UriColumn { get; private set; }
         public int DateAddedColumn { get; private set; }
         public int SizeColumn { get; private set; }
@@ -166,6 +167,7 @@ namespace MediaFilesManager
             var projection = new List<string>
             {
                 MediaStore.Files.FileColumns.Id,
+                MediaStore.Files.FileColumns.DisplayName,
                 MediaStore.Files.FileColumns.Data,
                 MediaStore.Files.FileColumns.DateAdded,
                 MediaStore.Files.FileColumns.Size,
@@ -227,6 +229,7 @@ namespace MediaFilesManager
         public void LoadColumnsIndexes(ICursor cursor)
         {
             IdColumn = cursor.GetColumnIndex(MediaStore.Files.FileColumns.Id);
+            NameColumn = cursor.GetColumnIndex(MediaStore.Files.FileColumns.DisplayName);
             UriColumn = cursor.GetColumnIndex(MediaStore.Files.FileColumns.Data);
             DateAddedColumn = cursor.GetColumnIndex(MediaStore.Files.FileColumns.DateAdded);
             SizeColumn = cursor.GetColumnIndex(MediaStore.Files.FileColumns.Size);
