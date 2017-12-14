@@ -9,6 +9,13 @@ Simple cross platform plugin to access images and videos on Android and iOS.
 |Xamarin.iOS|iOS 8+|
 |Xamarin.Android|API 14+|
 
+
+## Installing
+Install the [NuGet package MediaFilesManager](https://www.nuget.org/packages/MediaFilesManager):
+```
+nuget install MediaFilesManager
+```
+
 ### API Usage
 
 Call **CrossMediaFileManager.Current.GetAlbumsAsync()**
