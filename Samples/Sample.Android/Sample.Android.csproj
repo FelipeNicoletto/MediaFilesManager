@@ -52,6 +52,12 @@
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.5.0.121934\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
     </Reference>
+    <Reference Include="MediaFilesManager, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MediaFilesManager.1.0.1\lib\MonoAndroid80\MediaFilesManager.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaFilesManager.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MediaFilesManager.1.0.1\lib\MonoAndroid80\MediaFilesManager.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
@@ -154,14 +160,6 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MediaFilesManager.Abstractions\MediaFilesManager.Abstractions.csproj">
-      <Project>{b5bac99b-bf9b-4752-b590-7bfe4168df10}</Project>
-      <Name>MediaFilesManager.Abstractions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\MediaFilesManager.Android\MediaFilesManager.Android.csproj">
-      <Project>{c0509f85-742c-466a-a34e-39b2a1165bc2}</Project>
-      <Name>MediaFilesManager.Android</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Sample\Sample.csproj">
       <Project>{0A3791FA-6888-470D-8694-EF0D36550821}</Project>
       <Name>Sample</Name>

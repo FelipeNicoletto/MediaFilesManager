@@ -117,7 +117,15 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="MediaFilesManager, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MediaFilesManager.1.0.1\lib\Xamarin.iOS10\MediaFilesManager.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaFilesManager.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MediaFilesManager.1.0.1\lib\Xamarin.iOS10\MediaFilesManager.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -135,16 +143,6 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MediaFilesManager.Abstractions\MediaFilesManager.Abstractions.csproj">
-      <Project>{b5bac99b-bf9b-4752-b590-7bfe4168df10}</Project>
-      <Name>MediaFilesManager.Abstractions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\MediaFilesManager.iOS\MediaFilesManager.iOS.csproj">
-      <Project>{14ee01ff-ecc6-4b53-9770-f09e77cf8f3e}</Project>
-      <Name>MediaFilesManager.iOS</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
-    </ProjectReference>
     <ProjectReference Include="..\Sample\Sample.csproj">
       <Project>{0A3791FA-6888-470D-8694-EF0D36550821}</Project>
       <Name>Sample</Name>
