@@ -2,16 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>MediaFilesManager</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>MediaFilesManager</title>
     <authors>Felipe Nicoletto</authors>
     <owners>buildguest</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple cross platform plugin to access images and videos on Android and iOS</description>
-    <copyright>Copyright © 2017</copyright>
+    <copyright>Copyright © 2018</copyright>
     <dependencies>
-      <group targetFramework="netstandard1.0">
-        <dependency id="NETStandard.Library" version="1.6.1" />
+      <group targetFramework="netstandard2.0">
+        <dependency id="NETStandard.Library" version="2.0.1" />
       </group>
       <group targetFramework="MonoAndroid10">
         <dependency id="Xamarin.Android.Support.Compat" version="26.1.0.1"/>
@@ -22,7 +22,7 @@
   </metadata>
   <files>
     <!--Core-->
-    <file src="MediaFilesManager\bin\Release\netstandard1.0\MediaFilesManager.*" target="lib\netstandard1.0" />
+    <file src="MediaFilesManager\bin\Release\netstandard2.0\MediaFilesManager.*" target="lib\netstandard2.0" />
 
     <!--Xamarin.Android-->
     <file src="MediaFilesManager.Android\bin\Release\MediaFilesManager.*" target="lib\MonoAndroid80" />
