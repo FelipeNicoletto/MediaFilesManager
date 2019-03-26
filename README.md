@@ -1,5 +1,7 @@
 # MediaFilesManager
 
+<img src="https://img.shields.io/nuget/dt/MediaFilesManager.svg"/>
+
 Simple cross platform plugin to access images and videos on Android and iOS.
 
 **Platform Support**
